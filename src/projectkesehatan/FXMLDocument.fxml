@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" style="-fx-background-color: #FFEFD5;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectkesehatan.FXMLDocumentController">
+   <children>
+      <Label layoutX="168.0" layoutY="4.0" text="CEK KESEHATAN ANDA">
+         <font>
+            <Font name="Juice ITC" size="49.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="80.0" text="Nama Pasien   :" />
+      <Label layoutX="87.0" layoutY="108.0" text="Tinngi Badan   :" />
+      <Label layoutX="87.0" layoutY="135.0" text="Berat Badan    :" />
+      <Label layoutX="86.0" layoutY="164.0" text="Jenis Kelamin  :" />
+      <Label layoutX="387.0" layoutY="106.0" text="Cm" />
+      <Label layoutX="389.0" layoutY="131.0" text="Kg" />
+      <Label layoutX="88.0" layoutY="271.0" text="IDEAL Anda     :" />
+      <Label layoutX="87.0" layoutY="309.0" text="Analisi Kesehatan Anda  :" />
+      <TextField fx:id="nama" layoutX="231.0" layoutY="74.0" />
+      <TextField fx:id="tinggi" layoutX="231.0" layoutY="102.0" />
+      <TextField fx:id="berat" layoutX="231.0" layoutY="129.0" />
+      <RadioButton fx:id="lakilaki" layoutX="232.0" layoutY="162.0" mnemonicParsing="false" text="Laki-Laki">
+         <toggleGroup>
+            <ToggleGroup fx:id="jenis" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="perempuan" layoutX="232.0" layoutY="184.0" mnemonicParsing="false" text="Perempuan" toggleGroup="$jenis" />
+      <TextField fx:id="idealanda" layoutX="232.0" layoutY="268.0" />
+      <TextArea fx:id="hasil" layoutX="232.0" layoutY="302.0" prefHeight="94.0" prefWidth="279.0" />
+      <TextArea fx:id="kritik" layoutX="232.0" layoutY="414.0" prefHeight="73.0" prefWidth="279.0" />
+      <Button fx:id="idproses" layoutX="231.0" layoutY="218.0" mnemonicParsing="false" onAction="#proses" text="PROSES" />
+      <Button fx:id="idreset" layoutX="344.0" layoutY="218.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="58.0" text="RESET" />
+   </children>
+</AnchorPane>
